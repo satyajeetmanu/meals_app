@@ -1,0 +1,3 @@
+> We can make any widget tappable using InkWell or GestureDetector, but InkWell also provides a nice visual feedback if the
+    user taps an item, while GestureDetector does not provide this.
+    
