@@ -1,3 +1,6 @@
 > We can make any widget tappable using InkWell or GestureDetector, but InkWell also provides a nice visual feedback if the
     user taps an item, while GestureDetector does not provide this.
+
+> use .pushReplacement in place of .push (in Navigator) if you want to replace the current screen with a new screen,
+    rather than pushing than pushing the new screen on the top of existing screens.
     
