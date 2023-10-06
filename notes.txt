@@ -6,3 +6,14 @@
 
 > riverpod gives us ways to manage dynamic data and cross widget state without having the trouble to pass 
     those informations along the screens/widgets manually.
+
+> In complex apps, state changes and state usage don't happen in the same widget and might be far apart from each other. In
+    such cases we would have to pass functions around the widgets to manage state from different areas in the app. But with 
+    riverpod, we can set up a global state management provider, which can provide and manage both a dynamic value and also 
+    methods for changing that dynamic value which then can be consumed from anywhere in the app, so we can read and change 
+    these values from exactly the places where we need to read and change them.
+
+> For static data provider -> normal Provider()
+> For dynamic data provider -> we use the StateNotifier class
+
+> We must wrap the scope of widgets inside ProviderScope in which the providers are used.
