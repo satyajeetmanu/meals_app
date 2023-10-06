@@ -17,3 +17,6 @@
 > For dynamic data provider -> we use the StateNotifier class
 
 > We must wrap the scope of widgets inside ProviderScope in which the providers are used.
+
+> Explicit animations: We control the entire animation, more control thus more complexity.
+> Implicit animations: Flutter controls the animation, less control thus less complexity.
