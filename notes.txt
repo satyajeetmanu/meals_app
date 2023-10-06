@@ -3,4 +3,6 @@
 
 > use .pushReplacement in place of .push (in Navigator) if you want to replace the current screen with a new screen,
     rather than pushing than pushing the new screen on the top of existing screens.
-    
+
+> riverpod gives us ways to manage dynamic data and cross widget state without having the trouble to pass 
+    those informations along the screens/widgets manually.
