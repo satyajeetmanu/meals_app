@@ -32,7 +32,17 @@ class MealDetailsScreen extends ConsumerWidget {
                 duration: const Duration(seconds: 3),
               ));
             },
-            icon: Icon(isFavorite ? Icons.star : Icons.star_border),
+            icon: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 500),
+              transitionBuilder: ((child, animation) => RotationTransition(
+                    turns: Tween(begin: 0.3, end: 1.0).animate(animation),
+                    child: child,
+                  )),
+              child: Icon(
+                isFavorite ? Icons.star : Icons.star_border,
+                key: ValueKey(isFavorite),
+              ),
+            ),
           )
         ],
       ),
